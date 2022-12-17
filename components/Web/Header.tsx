@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="flex items-center justify-between space-x-2 h-[70px] shadow-md px-10">
+    <header className="flex items-center justify-between space-x-2 h-[70px] px-10">
       <div>
         <Link href="/">
           <Image
