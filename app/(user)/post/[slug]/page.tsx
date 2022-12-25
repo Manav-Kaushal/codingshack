@@ -84,4 +84,22 @@ async function Post({ params: { slug } }: Props) {
   );
 }
 
+export async function generateStaticParams() {
+  const query = groq`
+    *[_type=='post']
+    {
+      slug
+    }
+  `;
+
+  const slugs: Post[] = await client.fetch(query);
+  const slugRoutes = slugs.map((slug) => slug.slug.current);
+
+  return slugRoutes.map((slug) => ({
+    slug,
+  }));
+}
+
+export const revalidate = 30; // revalidate page every 30 seconds
+
 export default Post;

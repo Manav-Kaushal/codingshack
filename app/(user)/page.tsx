@@ -34,3 +34,5 @@ export default async function HomePage() {
 
   return <BlogList posts={posts} />;
 }
+
+export const revalidate = 30;
