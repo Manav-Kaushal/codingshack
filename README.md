@@ -1,5 +1,7 @@
 # CodingShack - Blog Platform with Next.js and Sanity CMS
 
+[Deployed Url](https://codingshack.vercel.app/)
+
 This project is a blog platform built using Next.js and Tailwind CSS, with content management handled by Sanity CMS. The combination of these technologies provides a powerful and efficient solution for creating and managing a dynamic blog.
 
 ## Features
